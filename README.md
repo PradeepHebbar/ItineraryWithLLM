@@ -1,7 +1,5 @@
 # Travel Guide External Data - Project Backup
 
-**Backup Date:** $(date +"%Y-%m-%d %H:%M:%S")
-
 ## Project Overview
 
 This is a comprehensive backup of the Travel Guide External Data project - an AI-powered itinerary planning system for Mysuru (Mysore), India. The system uses RAG
