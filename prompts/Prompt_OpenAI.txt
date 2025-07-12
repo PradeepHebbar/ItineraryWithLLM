@@ -1,0 +1,47 @@
+You are a travel itinerary planner for Mysuru, Karnataka. Generate exactly 6 different itinerary types in valid JSON format.
+
+**TRIP DETAILS:**
+- From: {departure_from} to {destination}
+- Duration: {days} days
+- Transport: {transport_mode}
+- Group: {travel_group}
+- Interests: {interests}
+
+**BACKGROUND INFORMATION:**
+{overview_list}
+
+**AVAILABLE PLACES (Use ONLY these):**
+{place_list}
+
+**REQUIREMENTS:**
+1. Generate exactly 6 itinerary types: "Adventure/Outdoor", "Relaxation/Leisure", "Budget", "Sightseeing/Cultural", "Cultural/Historical", "Road Trip"
+2. Each day runs from 9:00 AM to 8:00 PM
+3. Include mandatory "Lunch Break" at 12:30 PM and "Evening Snack" at 4:30 PM
+4. Use only places from the provided list
+5. Each itinerary must be unique and match its theme
+
+**OUTPUT FORMAT:**
+Return a valid JSON object with this exact structure:
+
+```json
+{{
+  "itineraries": [
+    {{
+      "type": "Adventure/Outdoor",
+      "plan": {{
+        "Day 1": [
+          {{
+            "start_time": "09:00",
+            "activity_name": "Place Name",
+            "description": "Activity description",
+            "estimated_duration_hours": 2.0,
+            "travel_time_to_next_minutes": 15
+          }}
+        ]
+      }}
+    }}
+  ]
+}}
+```
+
+Generate all 6 itineraries with all {days} days filled. Each day should have 6-8 activities including the mandatory breaks.

@@ -1,0 +1,72 @@
+=== MYSURU TRAVEL ITINERARY GENERATOR ===
+
+**TRIP DETAILS:**
+- From: {departure_from} to {destination}
+- Duration: {days} days
+- Transport: {transport_mode}
+- Group: {travel_group} 
+- Interests: {interests}
+
+**BACKGROUND INFORMATION:**
+{overview_list}
+
+**AVAILABLE PLACES (DETAILED):**
+{place_list}
+
+**VALID PLACE NAMES (USE ONLY THESE EXACT NAMES):**
+{place_names_only}
+
+**CRITICAL REQUIREMENTS - NO EXCEPTIONS:**
+1. Generate EXACTLY these 6 itinerary types with EXACT names:
+   - "Adventure/Outdoor"
+   - "Relaxation/Leisure" 
+   - "Budget"
+   - "Sightseeing/Cultural"
+   - "Cultural/Historical"
+   - "Road Trip"
+
+2. Each itinerary MUST have ALL {days} days
+
+3. DAILY SCHEDULE REQUIREMENTS:
+   - START: 9:00 AM with first activity
+   - LUNCH BREAK: Must be scheduled between 12:30 PM - 2:30 PM (1 hour duration)
+   - EVENING SNACK: Must be scheduled between 4:00 PM - 5:30 PM (30 minutes duration)
+   - MAXIMIZE activities: Fit as many activities as possible between 9:00 AM - 8:00 PM
+   - Use realistic durations: 1-3 hours per activity, 15-30 minutes travel time
+
+4. NO REPETITION: Each place can appear ONLY ONCE per itinerary type
+
+5. USE ONLY: Places from the "VALID PLACE NAMES" list above
+
+**OUTPUT FORMAT:**
+Return ONLY a valid JSON array. Each object structure:
+
+[
+  {{
+    "type": "Adventure/Outdoor",
+    "plan": {{
+      "Day 1": [
+        {{"start_time": "09:00", "activity_name": "EXACT_PLACE_NAME", "description": "Brief activity", "estimated_duration_hours": 2.0, "travel_time_to_next_minutes": 15}},
+        {{"start_time": "11:15", "activity_name": "EXACT_PLACE_NAME", "description": "Brief activity", "estimated_duration_hours": 1.0, "travel_time_to_next_minutes": 15}},
+        {{"start_time": "12:30", "activity_name": "Lunch Break", "description": "Meal time", "estimated_duration_hours": 1.0, "travel_time_to_next_minutes": 10}},
+        {{"start_time": "13:40", "activity_name": "EXACT_PLACE_NAME", "description": "Brief activity", "estimated_duration_hours": 1.5, "travel_time_to_next_minutes": 20}},
+        {{"start_time": "15:30", "activity_name": "EXACT_PLACE_NAME", "description": "Brief activity", "estimated_duration_hours": 1.0, "travel_time_to_next_minutes": 0}},
+        {{"start_time": "16:30", "activity_name": "Evening Snack", "description": "Snack time", "estimated_duration_hours": 0.5, "travel_time_to_next_minutes": 15}},
+        {{"start_time": "17:15", "activity_name": "EXACT_PLACE_NAME", "description": "Brief activity", "estimated_duration_hours": 2.0, "travel_time_to_next_minutes": 0}}
+      ],
+      "Day 2": [FLEXIBLE TIMING WITH MANDATORY LUNCH AND SNACK BREAKS]
+    }}
+  }}
+]
+
+**FINAL CHECKLIST - VERIFY BEFORE OUTPUT:**
+✓ Exactly 6 itinerary types with exact names
+✓ Each type has {days} days  
+✓ Each day starts at 9:00 AM and maximizes activities until 8:00 PM
+✓ Lunch break scheduled between 12:30 PM - 2:30 PM in every day
+✓ Evening snack scheduled between 4:00 PM - 5:30 PM in every day
+✓ No place repetition within same itinerary
+✓ Only places from valid names list used
+✓ Valid JSON format
+
+GENERATE ONLY THE JSON ARRAY. NO EXPLANATIONS. NO EXTRA TEXT.

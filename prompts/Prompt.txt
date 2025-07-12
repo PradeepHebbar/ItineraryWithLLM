@@ -1,0 +1,143 @@
+=== STRICT ITINERARY GENERATION INSTRUCTIONS ===
+
+**TRIP DETAILS:**
+- Departure from: {departure_from}
+- Destination: {destination}
+- Trip length: {days} day(s)
+- Transport mode: {transport_mode}
+- Interests: {interests}
+- Travel group: {travel_group}
+
+**BACKGROUND INFORMATION:**
+{overview_list}
+
+**AVAILABLE PLACES (Use ONLY these):**
+{place_list}
+
+=== MANDATORY REQUIREMENTS (NO EXCEPTIONS) ===
+
+**YOU MUST GENERATE EXACTLY 6 ITINERARY STYLES WITH THESE EXACT NAMES (NO SUBSTITUTIONS):**
+1. Adventure/Outdoor
+1. Adventure/Outdoor
+2. Relaxation/Leisure
+3. Budget
+4. Sightseeing/Cultural
+5. Cultural/Historical
+6. Road Trip
+
+**DAILY SCHEDULE REQUIREMENTS (NON-NEGOTIABLE):**
+- START TIME: 9:00 AM (every day)
+- END TIME: 8:00 PM (every day)
+- ACTIVITIES PER DAY: 8 activities (including breaks)
+- MANDATORY BREAKS: Lunch (12:30-13:30) and Snack (16:30-17:00)
+
+**EXACT TIME STRUCTURE (FOLLOW THIS EXACTLY):**
+- 09:00 AM - Activity 1 (1.5 hours)
+- 10:30 AM - Activity 2 (2.0 hours)
+- 12:30 PM - Lunch Break (1.0 hour)
+- 13:30 PM - Activity 3 (1.5 hours)
+- 15:00 PM - Activity 4 (1.5 hours)
+- 16:30 PM - Evening Snack (0.5 hour)
+- 17:00 PM - Activity 5 (1.0 hour)
+- 18:00 PM - Activity 6 (1.0 hour)
+
+**JSON FORMAT (EXACT STRUCTURE - DO NOT DEVIATE):**
+
+[
+  {{
+    "type": "Adventure/Outdoor",
+    "plan": {{
+      "Day 1": [
+        {{"start_time": "09:00", "activity_name": "Activity Name", "description": "Brief description", "estimated_duration_hours": 1.5, "travel_time_to_next_minutes": 0}},
+        {{"start_time": "10:30", "activity_name": "Activity Name", "description": "Brief description", "estimated_duration_hours": 2.0, "travel_time_to_next_minutes": 0}},
+        {{"start_time": "12:30", "activity_name": "Lunch Break", "description": "Local restaurant meal", "estimated_duration_hours": 1.0, "travel_time_to_next_minutes": 0}},
+        {{"start_time": "13:30", "activity_name": "Activity Name", "description": "Brief description", "estimated_duration_hours": 1.5, "travel_time_to_next_minutes": 0}},
+        {{"start_time": "15:00", "activity_name": "Activity Name", "description": "Brief description", "estimated_duration_hours": 1.5, "travel_time_to_next_minutes": 0}},
+        {{"start_time": "16:30", "activity_name": "Evening Snack", "description": "Local snack and refreshment", "estimated_duration_hours": 0.5, "travel_time_to_next_minutes": 0}},
+        {{"start_time": "17:00", "activity_name": "Activity Name", "description": "Brief description", "estimated_duration_hours": 1.0, "travel_time_to_next_minutes": 0}},
+        {{"start_time": "18:00", "activity_name": "Activity Name", "description": "Brief description", "estimated_duration_hours": 1.0, "travel_time_to_next_minutes": 0}}
+      ],
+      "Day 2": [REPEAT SAME 8-ACTIVITY STRUCTURE],
+      "Day 3": [REPEAT SAME 8-ACTIVITY STRUCTURE]
+    }}
+  }},
+  {{"type": "Relaxation/Leisure", "plan": {{ALL {days} DAYS WITH 8 ACTIVITIES EACH}}}},
+  {{"type": "Budget", "plan": {{ALL {days} DAYS WITH 8 ACTIVITIES EACH}}}},
+  {{"type": "Sightseeing/Cultural", "plan": {{ALL {days} DAYS WITH 8 ACTIVITIES EACH}}}},
+  {{"type": "Cultural/Historical", "plan": {{ALL {days} DAYS WITH 8 ACTIVITIES EACH}}}},
+  {{"type": "Road Trip", "plan": {{ALL {days} DAYS WITH 8 ACTIVITIES EACH}}}}
+]
+
+**FINAL CHECKLIST (VERIFY BEFORE SUBMITTING):**
+☐ Exactly 6 itinerary types with exact names above
+☐ Each itinerary has ALL {days} days
+☐ Each day has exactly 8 activities
+☐ Each day starts at 9:00 AM and ends at 8:00 PM
+☐ Lunch break at 12:30 and snack break at 16:30
+☐ Valid JSON format
+
+**GENERATE ONLY JSON. NO EXPLANATIONS. NO EXTRA TEXT.**
+        {
+          "start_time": "16:30",
+          "activity_name": "Evening Snack",
+          "description": "Local snack and refreshment",
+          "estimated_duration_hours": 0.5,
+          "travel_time_to_next_minutes": 15
+        }
+      ],
+      "Day 2": [...],
+      "Day 3": [...]
+    }
+  },
+  {
+    "type": "Relaxation/Leisure",
+    "plan": {
+      "Day 1": [...],
+      "Day 2": [...],
+      "Day 3": [...]
+    }
+  },
+  {
+    "type": "Budget",
+    "plan": {
+      "Day 1": [...],
+      "Day 2": [...],
+      "Day 3": [...]
+    }
+  },
+  {
+    "type": "Sightseeing/Cultural",
+    "plan": {
+      "Day 1": [...],
+      "Day 2": [...],
+      "Day 3": [...]
+    }
+  },
+  {
+    "type": "Cultural/Historical",
+    "plan": {
+      "Day 1": [...],
+      "Day 2": [...],
+      "Day 3": [...]
+    }
+  },
+  {
+    "type": "Road Trip",
+    "plan": {
+      "Day 1": [...],
+      "Day 2": [...],
+      "Day 3": [...]
+    }
+  }
+]
+
+**CRITICAL RULES:**
+1. Generate ALL 6 itineraries - no exceptions
+2. Each itinerary MUST have ALL {days} days
+3. Each day MUST have 6-8 activities from 9:00 AM to 8:00 PM
+4. Use ONLY the exact style names listed above
+5. Include mandatory lunch and snack breaks
+6. Use realistic, varied durations based on attraction type
+7. Return ONLY valid JSON - no additional text
+
+**FAILURE TO FOLLOW THESE RULES EXACTLY WILL RESULT IN REJECTION**

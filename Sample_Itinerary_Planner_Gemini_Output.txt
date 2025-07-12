@@ -1,0 +1,729 @@
+python itinerary_planner.py --departure_from "Bangalore" --destination "Mysuru" --days 3 --transport_mode "car" --interests "history, culture, nature" --travel_group "family" --backend gemini --model "gemini-2.0-flash-exp"
+
+
+===== PROMPT STATISTICS =====
+Backend: gemini
+Model: gemini-2.0-flash-exp
+Prompt characters: 7,348
+Estimated input tokens: 1,837
+Max output tokens: 8,192
+==============================
+
+===== GEMINI TOKEN USAGE =====
+Input tokens (prompt): 2252
+Output tokens (response): 7129
+Total tokens: 9381
+Estimated cost:
+  Input: $0.000169
+  Output: $0.002139
+  Total: $0.002308
+==============================
+
+===== ITINERARY JSON =====
+ [
+  {
+    "type": "Adventure/Outdoor",
+    "plan": {
+      "Day 1": [
+        {
+          "start_time": "09:00",
+          "activity_name": "GRS Fantasy Park",
+          "description": "Thrilling rides and water activities",
+          "estimated_duration_hours": 2.5,
+          "travel_time_to_next_minutes": 15
+        },
+        {
+          "start_time": "11:45",
+          "activity_name": "Lion Area",
+          "description": "Explore the lion enclosure",
+          "estimated_duration_hours": 0.75,
+          "travel_time_to_next_minutes": 0
+        },
+        {
+          "start_time": "12:30",
+          "activity_name": "Lunch Break",
+          "description": "Local restaurant meal",
+          "estimated_duration_hours": 1.0,
+          "travel_time_to_next_minutes": 0
+        },
+        {
+          "start_time": "13:30",
+          "activity_name": "Karanji Lake Nature Park",
+          "description": "Boating and nature walk",
+          "estimated_duration_hours": 1.5,
+          "travel_time_to_next_minutes": 0
+        },
+        {
+          "start_time": "15:00",
+          "activity_name": "Sri Chamarajendra Zoological Gardens (Mysuru Zoo)",
+          "description": "Wildlife exploration",
+          "estimated_duration_hours": 1.5,
+          "travel_time_to_next_minutes": 0
+        },
+        {
+          "start_time": "16:30",
+          "activity_name": "Evening Snack",
+          "description": "Local snacks and refreshments",
+          "estimated_duration_hours": 0.5,
+          "travel_time_to_next_minutes": 0
+        },
+        {
+          "start_time": "17:00",
+          "activity_name": "Chamundi Hill Lookout View Point",
+          "description": "Evening sunset views and photography",
+          "estimated_duration_hours": 1.0,
+          "travel_time_to_next_minutes": 0
+        },
+        {
+          "start_time": "18:00",
+          "activity_name": "Kuvempu Vana",
+          "description": "Peaceful evening garden walk to end the day",
+          "estimated_duration_hours": 2.0,
+          "travel_time_to_next_minutes": 0
+        }
+      ],
+      "Day 2": [
+        {
+          "start_time": "09:00",
+          "activity_name": "Chamundi Hill Lookout View Point",
+          "description": "Morning views and photography",
+          "estimated_duration_hours": 1.5,
+          "travel_time_to_next_minutes": 15
+        },
+        {
+          "start_time": "10:45",
+          "activity_name": "Karanji Lake Nature Park",
+          "description": "Bird watching and nature trails",
+          "estimated_duration_hours": 1.5,
+          "travel_time_to_next_minutes": 0
+        },
+        {
+          "start_time": "12:15",
+          "activity_name": "Lion Area",
+          "description": "Observe lions in their habitat",
+          "estimated_duration_hours": 0.5,
+          "travel_time_to_next_minutes": 0
+        },
+        {
+          "start_time": "12:45",
+          "activity_name": "Lunch Break",
+          "description": "Enjoy a local meal",
+          "estimated_duration_hours": 1.0,
+          "travel_time_to_next_minutes": 0
+        },
+        {
+          "start_time": "13:45",
+          "activity_name": "Sri Chamarajendra Zoological Gardens (Mysuru Zoo)",
+          "description": "Explore different animal species",
+          "estimated_duration_hours": 2.0,
+          "travel_time_to_next_minutes": 0
+        },
+        {
+          "start_time": "15:45",
+          "activity_name": "GRS Fantasy Park",
+          "description": "Enjoy water rides and attractions",
+          "estimated_duration_hours": 1.0,
+          "travel_time_to_next_minutes": 0
+        },
+        {
+          "start_time": "16:45",
+          "activity_name": "Evening Snack",
+          "description": "Grab a quick snack",
+          "estimated_duration_hours": 0.5,
+          "travel_time_to_next_minutes": 0
+        },
+        {
+          "start_time": "17:15",
+          "activity_name": "Manuvana Park",
+          "description": "Relaxing walk in the park",
+          "estimated_duration_hours": 2.75,
+          "travel_time_to_next_minutes": 0
+        }
+      ]
+    }
+  },
+  {
+    "type": "Relaxation/Leisure",
+    "plan": {
+      "Day 1": [
+        {
+          "start_time": "09:00",
+          "activity_name": "Cheluvamba Park",
+          "description": "Morning stroll in the park",
+          "estimated_duration_hours": 2.0,
+          "travel_time_to_next_minutes": 15
+        },
+        {
+          "start_time": "11:15",
+          "activity_name": "Kuvempu Vana",
+          "description": "Relaxing walk amidst nature",
+          "estimated_duration_hours": 1.0,
+          "travel_time_to_next_minutes": 0
+        },
+        {
+          "start_time": "12:15",
+          "activity_name": "Lunch Break",
+          "description": "Enjoy a leisurely lunch",
+          "estimated_duration_hours": 1.0,
+          "travel_time_to_next_minutes": 0
+        },
+        {
+          "start_time": "13:15",
+          "activity_name": "Karanji Lake Nature Park",
+          "description": "Relax by the lake and enjoy bird watching",
+          "estimated_duration_hours": 2.0,
+          "travel_time_to_next_minutes": 0
+        },
+        {
+          "start_time": "15:15",
+          "activity_name": "Manuvana Park",
+          "description": "Relaxing time in the park",
+          "estimated_duration_hours": 1.0,
+          "travel_time_to_next_minutes": 0
+        },
+        {
+          "start_time": "16:15",
+          "activity_name": "Evening Snack",
+          "description": "Enjoy a snack",
+          "estimated_duration_hours": 0.5,
+          "travel_time_to_next_minutes": 0
+        },
+        {
+          "start_time": "16:45",
+          "activity_name": "Regional Museum of Natural History Mysuru",
+          "description": "Explore natural history exhibits",
+          "estimated_duration_hours": 1.75,
+          "travel_time_to_next_minutes": 0
+        },
+        {
+          "start_time": "18:30",
+          "activity_name": "Chamundi Hill Lookout View Point",
+          "description": "Enjoy the sunset view",
+          "estimated_duration_hours": 1.5,
+          "travel_time_to_next_minutes": 0
+        }
+      ],
+      "Day 2": [
+        {
+          "start_time": "09:00",
+          "activity_name": "Kuvempu Vana",
+          "description": "Morning walk in the garden",
+          "estimated_duration_hours": 2.0,
+          "travel_time_to_next_minutes": 15
+        },
+        {
+          "start_time": "11:15",
+          "activity_name": "Cheluvamba Park",
+          "description": "Relaxing time in the park",
+          "estimated_duration_hours": 1.0,
+          "travel_time_to_next_minutes": 0
+        },
+        {
+          "start_time": "12:15",
+          "activity_name": "Lunch Break",
+          "description": "Enjoy a relaxed lunch",
+          "estimated_duration_hours": 1.0,
+          "travel_time_to_next_minutes": 0
+        },
+        {
+          "start_time": "13:15",
+          "activity_name": "Manuvana Park",
+          "description": "Afternoon relaxation",
+          "estimated_duration_hours": 2.0,
+          "travel_time_to_next_minutes": 0
+        },
+        {
+          "start_time": "15:15",
+          "activity_name": "Karanji Lake Nature Park",
+          "description": "Enjoy the serene lake view",
+          "estimated_duration_hours": 1.0,
+          "travel_time_to_next_minutes": 0
+        },
+        {
+          "start_time": "16:15",
+          "activity_name": "Evening Snack",
+          "description": "Enjoy a snack",
+          "estimated_duration_hours": 0.5,
+          "travel_time_to_next_minutes": 0
+        },
+        {
+          "start_time": "16:45",
+          "activity_name": "Regional Museum of Natural History Mysuru",
+          "description": "Explore the museum",
+          "estimated_duration_hours": 1.75,
+          "travel_time_to_next_minutes": 0
+        },
+        {
+          "start_time": "18:30",
+          "activity_name": "Mysuru Palace",
+          "description": "Evening view of the illuminated palace",
+          "estimated_duration_hours": 1.5,
+          "travel_time_to_next_minutes": 0
+        }
+      ]
+    }
+  },
+  {
+    "type": "Budget",
+    "plan": {
+      "Day 1": [
+        {
+          "start_time": "09:00",
+          "activity_name": "Cheluvamba Park",
+          "description": "Morning walk in the park",
+          "estimated_duration_hours": 2.0,
+          "travel_time_to_next_minutes": 15
+        },
+        {
+          "start_time": "11:15",
+          "activity_name": "Kuvempu Vana",
+          "description": "Explore the gardens",
+          "estimated_duration_hours": 1.0,
+          "travel_time_to_next_minutes": 0
+        },
+        {
+          "start_time": "12:15",
+          "activity_name": "Lunch Break",
+          "description": "Affordable local meal",
+          "estimated_duration_hours": 1.0,
+          "travel_time_to_next_minutes": 0
+        },
+        {
+          "start_time": "13:15",
+          "activity_name": "Manuvana Park",
+          "description": "Relaxing time in the park",
+          "estimated_duration_hours": 2.0,
+          "travel_time_to_next_minutes": 0
+        },
+        {
+          "start_time": "15:15",
+          "activity_name": "Chamundi Hill Lookout View Point",
+          "description": "Enjoy the panoramic view",
+          "estimated_duration_hours": 1.0,
+          "travel_time_to_next_minutes": 0
+        },
+        {
+          "start_time": "16:15",
+          "activity_name": "Evening Snack",
+          "description": "Affordable local snacks",
+          "estimated_duration_hours": 0.5,
+          "travel_time_to_next_minutes": 0
+        },
+        {
+          "start_time": "16:45",
+          "activity_name": "Karanji Lake Nature Park",
+          "description": "Nature walk around the lake",
+          "estimated_duration_hours": 1.75,
+          "travel_time_to_next_minutes": 0
+        },
+        {
+          "start_time": "18:30",
+          "activity_name": "Cheluvamba Park",
+          "description": "Evening relaxation in the park",
+          "estimated_duration_hours": 1.5,
+          "travel_time_to_next_minutes": 0
+        }
+      ],
+      "Day 2": [
+        {
+          "start_time": "09:00",
+          "activity_name": "Kuvempu Vana",
+          "description": "Morning walk in the garden",
+          "estimated_duration_hours": 2.0,
+          "travel_time_to_next_minutes": 15
+        },
+        {
+          "start_time": "11:15",
+          "activity_name": "Manuvana Park",
+          "description": "Relaxing time in the park",
+          "estimated_duration_hours": 1.0,
+          "travel_time_to_next_minutes": 0
+        },
+        {
+          "start_time": "12:15",
+          "activity_name": "Lunch Break",
+          "description": "Budget-friendly meal",
+          "estimated_duration_hours": 1.0,
+          "travel_time_to_next_minutes": 0
+        },
+        {
+          "start_time": "13:15",
+          "activity_name": "Regional Museum of Natural History Mysuru",
+          "description": "Explore the museum",
+          "estimated_duration_hours": 2.0,
+          "travel_time_to_next_minutes": 0
+        },
+        {
+          "start_time": "15:15",
+          "activity_name": "Chamundi Hill Lookout View Point",
+          "description": "Enjoy the view",
+          "estimated_duration_hours": 1.0,
+          "travel_time_to_next_minutes": 0
+        },
+        {
+          "start_time": "16:15",
+          "activity_name": "Evening Snack",
+          "description": "Affordable snack",
+          "estimated_duration_hours": 0.5,
+          "travel_time_to_next_minutes": 0
+        },
+        {
+          "start_time": "16:45",
+          "activity_name": "Cheluvamba Park",
+          "description": "Relaxing walk",
+          "estimated_duration_hours": 1.75,
+          "travel_time_to_next_minutes": 0
+        },
+        {
+          "start_time": "18:30",
+          "activity_name": "Karanji Lake Nature Park",
+          "description": "Evening walk around the lake",
+          "estimated_duration_hours": 1.5,
+          "travel_time_to_next_minutes": 0
+        }
+      ]
+    }
+  },
+  {
+    "type": "Cultural/Historical",
+    "plan": {
+      "Day 1": [
+        {
+          "start_time": "09:00",
+          "activity_name": "Mysuru Palace",
+          "description": "Explore the historical palace",
+          "estimated_duration_hours": 3.0,
+          "travel_time_to_next_minutes": 15
+        },
+        {
+          "start_time": "12:15",
+          "activity_name": "Lunch Break",
+          "description": "Traditional local cuisine",
+          "estimated_duration_hours": 1.0,
+          "travel_time_to_next_minutes": 0
+        },
+        {
+          "start_time": "13:15",
+          "activity_name": "Regional Museum of Natural History Mysuru",
+          "description": "Learn about the region's natural history",
+          "estimated_duration_hours": 2.0,
+          "travel_time_to_next_minutes": 0
+        },
+        {
+          "start_time": "15:15",
+          "activity_name": "Chamundi Hill Lookout View Point",
+          "description": "View of the city from the hilltop",
+          "estimated_duration_hours": 1.0,
+          "travel_time_to_next_minutes": 0
+        },
+        {
+          "start_time": "16:15",
+          "activity_name": "Evening Snack",
+          "description": "Traditional snacks",
+          "estimated_duration_hours": 0.5,
+          "travel_time_to_next_minutes": 0
+        },
+        {
+          "start_time": "16:45",
+          "activity_name": "Kuvempu Vana",
+          "description": "Relaxing walk in the garden",
+          "estimated_duration_hours": 1.75,
+          "travel_time_to_next_minutes": 0
+        },
+        {
+          "start_time": "18:30",
+          "activity_name": "Mysuru Palace",
+          "description": "View the illuminated palace at night",
+          "estimated_duration_hours": 1.5,
+          "travel_time_to_next_minutes": 0
+        }
+      ],
+      "Day 2": [
+        {
+          "start_time": "09:00",
+          "activity_name": "Regional Museum of Natural History Mysuru",
+          "description": "Explore the museum exhibits",
+          "estimated_duration_hours": 2.0,
+          "travel_time_to_next_minutes": 15
+        },
+        {
+          "start_time": "11:15",
+          "activity_name": "Mysuru Palace",
+          "description": "Revisit the palace for a different perspective",
+          "estimated_duration_hours": 1.0,
+          "travel_time_to_next_minutes": 0
+        },
+        {
+          "start_time": "12:15",
+          "activity_name": "Lunch Break",
+          "description": "Traditional meal",
+          "estimated_duration_hours": 1.0,
+          "travel_time_to_next_minutes": 0
+        },
+        {
+          "start_time": "13:15",
+          "activity_name": "Chamundi Hill Lookout View Point",
+          "description": "Explore the hilltop",
+          "estimated_duration_hours": 2.0,
+          "travel_time_to_next_minutes": 0
+        },
+        {
+          "start_time": "15:15",
+          "activity_name": "Kuvempu Vana",
+          "description": "Relaxing time in the garden",
+          "estimated_duration_hours": 1.0,
+          "travel_time_to_next_minutes": 0
+        },
+        {
+          "start_time": "16:15",
+          "activity_name": "Evening Snack",
+          "description": "Traditional snack",
+          "estimated_duration_hours": 0.5,
+          "travel_time_to_next_minutes": 0
+        },
+        {
+          "start_time": "16:45",
+          "activity_name": "Cheluvamba Park",
+          "description": "Evening walk in the park",
+          "estimated_duration_hours": 1.75,
+          "travel_time_to_next_minutes": 0
+        },
+        {
+          "start_time": "18:30",
+          "activity_name": "Manuvana Park",
+          "description": "Evening relaxation",
+          "estimated_duration_hours": 1.5,
+          "travel_time_to_next_minutes": 0
+        }
+      ]
+    }
+  },
+  {
+    "type": "Family-Friendly",
+    "plan": {
+      "Day 1": [
+        {
+          "start_time": "09:00",
+          "activity_name": "Sri Chamarajendra Zoological Gardens (Mysuru Zoo)",
+          "description": "Explore the zoo",
+          "estimated_duration_hours": 3.0,
+          "travel_time_to_next_minutes": 15
+        },
+        {
+          "start_time": "12:15",
+          "activity_name": "Lunch Break",
+          "description": "Family-friendly restaurant",
+          "estimated_duration_hours": 1.0,
+          "travel_time_to_next_minutes": 0
+        },
+        {
+          "start_time": "13:15",
+          "activity_name": "GRS Fantasy Park",
+          "description": "Enjoy rides and water activities",
+          "estimated_duration_hours": 2.0,
+          "travel_time_to_next_minutes": 0
+        },
+        {
+          "start_time": "15:15",
+          "activity_name": "Karanji Lake Nature Park",
+          "description": "Boating and bird watching",
+          "estimated_duration_hours": 1.0,
+          "travel_time_to_next_minutes": 0
+        },
+        {
+          "start_time": "16:15",
+          "activity_name": "Evening Snack",
+          "description": "Family-friendly snacks",
+          "estimated_duration_hours": 0.5,
+          "travel_time_to_next_minutes": 0
+        },
+        {
+          "start_time": "16:45",
+          "activity_name": "Cheluvamba Park",
+          "description": "Relaxing time in the park",
+          "estimated_duration_hours": 1.75,
+          "travel_time_to_next_minutes": 0
+        },
+        {
+          "start_time": "18:30",
+          "activity_name": "Manuvana Park",
+          "description": "Evening walk",
+          "estimated_duration_hours": 1.5,
+          "travel_time_to_next_minutes": 0
+        }
+      ],
+      "Day 2": [
+        {
+          "start_time": "09:00",
+          "activity_name": "Kuvempu Vana",
+          "description": "Morning walk in the garden",
+          "estimated_duration_hours": 2.0,
+          "travel_time_to_next_minutes": 15
+        },
+        {
+          "start_time": "11:15",
+          "activity_name": "Regional Museum of Natural History Mysuru",
+          "description": "Explore the museum",
+          "estimated_duration_hours": 1.0,
+          "travel_time_to_next_minutes": 0
+        },
+        {
+          "start_time": "12:15",
+          "activity_name": "Lunch Break",
+          "description": "Family lunch",
+          "estimated_duration_hours": 1.0,
+          "travel_time_to_next_minutes": 0
+        },
+        {
+          "start_time": "13:15",
+          "activity_name": "Chamundi Hill Lookout View Point",
+          "description": "Enjoy the view",
+          "estimated_duration_hours": 2.0,
+          "travel_time_to_next_minutes": 0
+        },
+        {
+          "start_time": "15:15",
+          "activity_name": "Lion Area",
+          "description": "Observe the lions",
+          "estimated_duration_hours": 1.0,
+          "travel_time_to_next_minutes": 0
+        },
+        {
+          "start_time": "16:15",
+          "activity_name": "Evening Snack",
+          "description": "Family snack",
+          "estimated_duration_hours": 0.5,
+          "travel_time_to_next_minutes": 0
+        },
+        {
+          "start_time": "16:45",
+          "activity_name": "Karanji Lake Nature Park",
+          "description": "Evening walk",
+          "estimated_duration_hours": 1.75,
+          "travel_time_to_next_minutes": 0
+        },
+        {
+          "start_time": "18:30",
+          "activity_name": "Mysuru Palace",
+          "description": "View the illuminated palace",
+          "estimated_duration_hours": 1.5,
+          "travel_time_to_next_minutes": 0
+        }
+      ]
+    }
+  },
+  {
+    "type": "Road Trip",
+    "plan": {
+      "Day 1": [
+        {
+          "start_time": "09:00",
+          "activity_name": "Chamundi Hill Lookout View Point",
+          "description": "Morning view of the city",
+          "estimated_duration_hours": 1.5,
+          "travel_time_to_next_minutes": 30
+        },
+        {
+          "start_time": "11:00",
+          "activity_name": "Karanji Lake Nature Park",
+          "description": "Explore the lake and bird watching",
+          "estimated_duration_hours": 1.0,
+          "travel_time_to_next_minutes": 0
+        },
+        {
+          "start_time": "12:00",
+          "activity_name": "Lunch Break",
+          "description": "Local restaurant",
+          "estimated_duration_hours": 1.0,
+          "travel_time_to_next_minutes": 0
+        },
+        {
+          "start_time": "13:00",
+          "activity_name": "Sri Chamarajendra Zoological Gardens (Mysuru Zoo)",
+          "description": "Explore the zoo",
+          "estimated_duration_hours": 2.0,
+          "travel_time_to_next_minutes": 0
+        },
+        {
+          "start_time": "15:00",
+          "activity_name": "GRS Fantasy Park",
+          "description": "Enjoy the rides",
+          "estimated_duration_hours": 1.0,
+          "travel_time_to_next_minutes": 0
+        },
+        {
+          "start_time": "16:00",
+          "activity_name": "Evening Snack",
+          "description": "Quick snack",
+          "estimated_duration_hours": 0.5,
+          "travel_time_to_next_minutes": 0
+        },
+        {
+          "start_time": "16:30",
+          "activity_name": "Kuvempu Vana",
+          "description": "Relaxing walk",
+          "estimated_duration_hours": 1.75,
+          "travel_time_to_next_minutes": 0
+        },
+        {
+          "start_time": "18:15",
+          "activity_name": "Cheluvamba Park",
+          "description": "Evening relaxation",
+          "estimated_duration_hours": 1.75,
+          "travel_time_to_next_minutes": 0
+        }
+      ],
+      "Day 2": [
+        {
+          "start_time": "09:00",
+          "activity_name": "Mysuru Palace",
+          "description": "Explore the palace",
+          "estimated_duration_hours": 2.0,
+          "travel_time_to_next_minutes": 30
+        },
+        {
+          "start_time": "11:30",
+          "activity_name": "Regional Museum of Natural History Mysuru",
+          "description": "Explore the museum",
+          "estimated_duration_hours": 1.0,
+          "travel_time_to_next_minutes": 0
+        },
+        {
+          "start_time": "12:30",
+          "activity_name": "Lunch Break",
+          "description": "Local cuisine",
+          "estimated_duration_hours": 1.0,
+          "travel_time_to_next_minutes": 0
+        },
+        {
+          "start_time": "13:30",
+          "activity_name": "Manuvana Park",
+          "description": "Relaxing time",
+          "estimated_duration_hours": 2.0,
+          "travel_time_to_next_minutes": 0
+        },
+        {
+          "start_time": "15:30",
+          "activity_name": "Lion Area",
+          "description": "Observe the lions",
+          "estimated_duration_hours": 1.0,
+          "travel_time_to_next_minutes": 0
+        },
+        {
+          "start_time": "16:30",
+          "activity_name": "Evening Snack",
+          "description": "Quick snack",
+          "estimated_duration_hours": 0.5,
+          "travel_time_to_next_minutes": 0
+        },
+        {
+          "start_time": "17:00",
+          "activity_name": "Chamundi Hill Lookout View Point",
+          "description": "Sunset view",
+          "estimated_duration_hours": 2.0,
+          "travel_time_to_next_minutes": 0
+        }
+      ]
+    }
+  }
+]

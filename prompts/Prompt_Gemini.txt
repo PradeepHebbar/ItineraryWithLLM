@@ -1,0 +1,197 @@
+You are an expert travel planner for Mysuru, Karnataka, India. Generate exactly 4 distinct itinerary types in valid JSON format.
+
+## Trip Information
+- **Route**: {departure_from} → {destination}
+- **Duration**: {days} days
+- **Transport**: {transport_mode}
+- **Group Type**: {travel_group}
+- **Interests**: {interests}
+
+## Available Places (USE ONLY THESE EXACT NAMES)
+{place_names_only}
+
+## Task Requirements
+Generate exactly 6 itinerary types with these EXACT names:
+1. **Adventure/Outdoor**
+2. **Relaxation/Leisure**
+3. **Budget**
+4. **Cultural/Historical**
+5. **Family-Friendly**
+6. **Road Trip**
+
+## Daily Schedule Requirements
+- **Start Time**: 9:00 AM sharp
+- **End Time**: Must reach exactly 8:00 PM (20:00) - FILL THE ENTIRE DAY
+- **Mandatory Lunch**: Schedule between 12:30-2:30 PM (1 hour duration)
+- **Mandatory Snack**: Schedule between 4:00-5:30 PM (30 minutes duration)
+- **Activity Coverage**: Plan 7-9 activities per day to fill 11 hours completely
+- **No Early Endings**: Last activity must end at or close to 8:00 PM
+- **No Repetition**: Each place can only appear ONCE within the same itinerary type
+- **Place Restriction**: Use ONLY places from the list above
+
+## Smart Activity Placement Guidelines
+1. **Morning (9:00-12:00)**: Start with active places like parks, museums, palaces
+2. **Afternoon (2:30-4:00)**: Continue with main attractions, zoos, fantasy parks
+3. **Evening (5:30-8:00)**: Schedule relaxing places like lakeside parks, viewpoints, gardens for sunset views
+4. **Match Places to Itinerary Type**:
+   - **Adventure/Outdoor**: GRS Fantasy Park, Zoological Gardens, Karanji Lake (boating), Hill viewpoints
+   - **Relaxation/Leisure**: Parks (Cheluvamba, Kuvempu Vana, Manuvana), Lakes, Gardens
+   - **Budget**: Free parks, viewpoints, nature areas, avoid expensive attractions
+   - **Cultural/Historical**: Mysuru Palace, Regional Museum, traditional places (avoid modern fantasy parks)
+   - **Family-Friendly**: Zoo, parks, lakes, family attractions like GRS Fantasy Park
+   - **Road Trip**: Mix of distant viewpoints, scenic routes, varied attractions with good car access
+5. **Evening Strategy**: Always end with scenic viewpoints, lakeside areas, or peaceful gardens for relaxation
+
+## Required JSON Output Format
+```json
+[
+  {{
+    "type": "Adventure/Outdoor",
+    "plan": {{
+      "Day 1": [
+        {{
+          "start_time": "09:00",
+          "activity_name": "GRS Fantasy Park",
+          "description": "Thrilling rides and water activities",
+          "estimated_duration_hours": 2.5,
+          "travel_time_to_next_minutes": 15
+        }},
+        {{
+          "start_time": "11:45",
+          "activity_name": "Chamundi Hill Lookout View Point",
+          "description": "Panoramic city views and photography",
+          "estimated_duration_hours": 0.75,
+          "travel_time_to_next_minutes": 0
+        }},
+        {{
+          "start_time": "12:30",
+          "activity_name": "Lunch Break",
+          "description": "Local restaurant meal",
+          "estimated_duration_hours": 1.0,
+          "travel_time_to_next_minutes": 0
+        }},
+        {{
+          "start_time": "13:30",
+          "activity_name": "Karanji Lake Nature Park",
+          "description": "Boating and nature walk",
+          "estimated_duration_hours": 1.5,
+          "travel_time_to_next_minutes": 0
+        }},
+        {{
+          "start_time": "15:00",
+          "activity_name": "Sri Chamarajendra Zoological Gardens (Mysuru Zoo)",
+          "description": "Wildlife exploration",
+          "estimated_duration_hours": 1.5,
+          "travel_time_to_next_minutes": 0
+        }},
+        {{
+          "start_time": "16:30",
+          "activity_name": "Evening Snack",
+          "description": "Local snacks and refreshments",
+          "estimated_duration_hours": 0.5,
+          "travel_time_to_next_minutes": 0
+        }},
+        {{
+          "start_time": "17:00",
+          "activity_name": "Chamundi Hill Lookout View Point",
+          "description": "Evening sunset views and photography",
+          "estimated_duration_hours": 1.0,
+          "travel_time_to_next_minutes": 0
+        }},
+        {{
+          "start_time": "18:00",
+          "activity_name": "Kuvempu Vana",
+          "description": "Peaceful evening garden walk to end the day",
+          "estimated_duration_hours": 2.0,
+          "travel_time_to_next_minutes": 0
+        }}
+      ],
+      "Day 2": [
+        // MUST FILL COMPLETELY FROM 9:00 AM TO 8:00 PM WITH 7-9 ACTIVITIES
+      ]
+    }}
+  }},
+  {{
+    "type": "Relaxation/Leisure",
+    "plan": {{
+      "Day 1": [
+        // MUST FILL COMPLETELY FROM 9:00 AM TO 8:00 PM WITH 7-9 ACTIVITIES
+      ],
+      "Day 2": [
+        // MUST FILL COMPLETELY FROM 9:00 AM TO 8:00 PM WITH 7-9 ACTIVITIES
+      ]
+    }}
+  }},
+  {{
+    "type": "Budget",
+    "plan": {{
+      "Day 1": [
+        // MUST FILL COMPLETELY FROM 9:00 AM TO 8:00 PM WITH 7-9 ACTIVITIES
+      ],
+      "Day 2": [
+        // MUST FILL COMPLETELY FROM 9:00 AM TO 8:00 PM WITH 7-9 ACTIVITIES
+      ]
+    }}
+  }},
+  {{
+    "type": "Cultural/Historical",
+    "plan": {{
+      "Day 1": [
+        // MUST FILL COMPLETELY FROM 9:00 AM TO 8:00 PM WITH 7-9 ACTIVITIES
+      ],
+      "Day 2": [
+        // MUST FILL COMPLETELY FROM 9:00 AM TO 8:00 PM WITH 7-9 ACTIVITIES
+      ]
+    }}
+  }},
+  {{
+    "type": "Family-Friendly",
+    "plan": {{
+      "Day 1": [
+        // MUST FILL COMPLETELY FROM 9:00 AM TO 8:00 PM WITH 7-9 ACTIVITIES
+      ],
+      "Day 2": [
+        // MUST FILL COMPLETELY FROM 9:00 AM TO 8:00 PM WITH 7-9 ACTIVITIES
+      ]
+    }}
+  }},
+  {{
+    "type": "Road Trip",
+    "plan": {{
+      "Day 1": [
+        // MUST FILL COMPLETELY FROM 9:00 AM TO 8:00 PM WITH 7-9 ACTIVITIES
+      ],
+      "Day 2": [
+        // MUST FILL COMPLETELY FROM 9:00 AM TO 8:00 PM WITH 7-9 ACTIVITIES
+      ]
+    }}
+  }},
+  {{
+    "type": "Cultural/Historical",
+    "plan": {{
+      "Day 1": [
+        // MUST FILL COMPLETELY FROM 9:00 AM TO 8:00 PM WITH 7-9 ACTIVITIES
+      ],
+      "Day 2": [
+        // MUST FILL COMPLETELY FROM 9:00 AM TO 8:00 PM WITH 7-9 ACTIVITIES
+      ]
+    }}
+  }}
+]
+```
+
+## Critical Instructions - FOLLOW EXACTLY
+1. **MANDATORY**: Generate ALL 6 itinerary types with exact names specified
+2. **MANDATORY**: Each day MUST be completely filled from 9:00 AM to 8:00 PM (11 full hours)
+3. **MANDATORY**: Plan 7-9 activities per day to ensure full coverage until 8:00 PM
+4. **MANDATORY**: Last activity must end at or very close to 8:00 PM - NO EARLY ENDINGS
+5. **MANDATORY**: Include lunch break (12:30-2:30 PM) and snack break (4:00-5:30 PM) every day
+6. **MANDATORY**: Use only places from the provided list - no other locations
+7. **MANDATORY**: No place repetition within the same itinerary type
+8. **MANDATORY**: Match places to itinerary types appropriately (e.g., no fantasy parks in Cultural/Historical)
+9. **MANDATORY**: Schedule evening activities (5:30-8:00 PM) with scenic viewpoints, lakes, gardens for relaxation
+10. **MANDATORY**: Return ONLY the JSON array - no additional text or explanations
+
+**TIME CALCULATION CHECK**: Start at 9:00 AM + 11 hours of activities/breaks = End at 8:00 PM
+
+Generate the complete JSON response now.

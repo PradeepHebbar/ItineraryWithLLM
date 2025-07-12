@@ -1,0 +1,181 @@
+python itinerary_planner.py --backend ollama --model llama3:latest --days 3 --departure_from Bangalore --destination Mysuru --transport_mode car --interests "Adventure, Nature, Historical" --travel_group family --K_places 30 --K_overview 5
+
+===== PROMPT STATISTICS =====
+Backend: ollama
+Model: llama3:latest
+Prompt characters: 73,009
+Estimated input tokens: 18,252
+Max output tokens: 8,192
+==============================
+
+===== RAW ITINERARY =====
+ Here is the generated JSON array:
+
+[
+  {
+    "type": "Adventure/Outdoor",
+    "plan": {
+      "Day 1": [
+        {"start_time": "09:00", "activity_name": "Chamundi hill Sunset Point", "description": "Watch the sunset", "estimated_duration_hours": 2.0, "travel_time_to_next_minutes": 15},
+        {"start_time": "11:15", "activity_name": "Mysuru Palace", "description": "Explore the palace", "estimated_duration_hours": 1.5, "travel_time_to_next_minutes": 20},
+        {"start_time": "12:30", "activity_name": "Lunch Break", "description": "Meal time", "estimated_duration_hours": 1.0, "travel_time_to_next_minutes": 10},
+        {"start_time": "13:40", "activity_name": "Karanji Lake Nature Park", "description": "Take a stroll around the lake", "estimated_duration_hours": 2.0, "travel_time_to_next_minutes": 20},
+        {"start_time": "15:30", "activity_name": "GRS Fantasy Park", "description": "Enjoy the rides and games", "estimated_duration_hours": 1.5, "travel_time_to_next_minutes": 10},
+        {"start_time": "16:30", "activity_name": "Evening Snack", "description": "Snack time", "estimated_duration_hours": 0.5, "travel_time_to_next_minutes": 15},
+        {"start_time": "17:15", "activity_name": "Mysuru Railway Museum", "description": "Learn about the history of railways", "estimated_duration_hours": 1.5, "travel_time_to_next_minutes": 10}
+      ],
+      "Day 2": [
+        {"start_time": "09:00", "activity_name": "Jaganmohan Palace (Sri Jayachamarajendra Art Gallery) And Auditorium", "description": "Explore the art gallery and auditorium", "estimated_duration_hours": 2.0, "travel_time_to_next_minutes": 15},
+        {"start_time": "11:15", "activity_name": "Regional Museum of Natural History Mysuru", "description": "Learn about natural history", "estimated_duration_hours": 1.5, "travel_time_to_next_minutes": 20},
+        {"start_time": "12:30", "activity_name": "Lunch Break", "description": "Meal time", "estimated_duration_hours": 1.0, "travel_time_to_next_minutes": 10},
+        {"start_time": "13:40", "activity_name": "Sri Chamarajendra Zoological Gardens (Mysuru Zoo)", "description": "Visit the zoo and see the animals", "estimated_duration_hours": 2.0, "travel_time_to_next_minutes": 20},
+        {"start_time": "15:30", "activity_name": "Ghat Goers Sunset Point", "description": "Watch the sunset again", "estimated_duration_hours": 1.5, "travel_time_to_next_minutes": 10},
+        {"start_time": "16:30", "activity_name": "Evening Snack", "description": "Snack time", "estimated_duration_hours": 0.5, "travel_time_to_next_minutes": 15},
+        {"start_time": "17:15", "activity_name": "Dr.puneethrajkumar (Appu) statue", "description": "Visit the statue and take photos", "estimated_duration_hours": 1.0, "travel_time_to_next_minutes": 10}
+      ],
+      "Day 3": [
+        {"start_time": "09:00", "activity_name": "Mysuru Palace", "description": "Explore the palace again", "estimated_duration_hours": 2.0, "travel_time_to_next_minutes": 15},
+        {"start_time": "11:15", "activity_name": "Cheluvamba Park", "description": "Take a stroll in the park", "estimated_duration_hours": 1.5, "travel_time_to_next_minutes": 20},
+        {"start_time": "12:30", "activity_name": "Lunch Break", "description": "Meal time", "estimated_duration_hours": 1.0, "travel_time_to_next_minutes": 10},
+        {"start_time": "13:40", "activity_name": "Karanji Lake Nature Park", "description": "Take a boat ride on the lake", "estimated_duration_hours": 2.0, "travel_time_to_next_minutes": 20},
+        {"start_time": "15:30", "activity_name": "GRS Up Down", "description": "Enjoy the thrill rides", "estimated_duration_hours": 1.5, "travel_time_to_next_minutes": 10},
+        {"start_time": "16:30", "activity_name": "Evening Snack", "description": "Snack time", "estimated_duration_hours": 0.5, "travel_time_to_next_minutes": 15},
+        {"start_time": "17:15", "activity_name": "Mysuru Railway Museum", "description": "Learn about the history of railways again", "estimated_duration_hours": 1.5, "travel_time_to_next_minutes": 10}
+      ]
+    }
+  },
+  {
+    "type": "Relaxation/Leisure",
+    "plan": {
+      "Day 1": [
+        {"start_time": "09:00", "activity_name": "Karanji Lake Nature Park", "description": "Take a leisurely walk around the lake", "estimated_duration_hours": 2.0, "travel_time_to_next_minutes": 15},
+        {"start_time": "11:15", "activity_name": "Cheluvamba Park", "description": "Relax in the park and enjoy the scenery", "estimated_duration_hours": 1.5, "travel_time_to_next_minutes": 20},
+        {"start_time": "12:30", "activity_name": "Lunch Break", "description": "Meal time", "estimated_duration_hours": 1.0, "travel_time_to_next_minutes": 10},
+        {"start_time": "13:40", "activity_name": "Mysuru Palace", "description": "Explore the palace at a leisurely pace", "estimated_duration_hours": 2.0, "travel_time_to_next_minutes": 20},
+        {"start_time": "15:30", "activity_name": "GRS Fantasy Park", "description": "Enjoy the rides and games at your own pace", "estimated_duration_hours": 1.5, "travel_time_to_next_minutes": 10},
+        {"start_time": "16:30", "activity_name": "Evening Snack", "description": "Snack time", "estimated_duration_hours": 0.5, "travel_time_to_next_minutes": 15},
+        {"start_time": "17:15", "activity_name": "Mysuru Railway Museum", "description": "Learn about the history of railways at your own pace", "estimated_duration_hours": 1.5, "travel_time_to_next_minutes": 10}
+      ],
+      "Day 2": [
+        {"start_time": "09:00", "activity_name": "Jaganmohan Palace (Sri Jayachamarajendra Art Gallery) And Auditorium", "description": "Explore the art gallery and auditorium at your own pace", "estimated_duration_hours": 2.0, "travel_time_to_next_minutes": 15},
+        {"start_time": "11:15", "activity_name": "Regional Museum of Natural History Mysuru", "description": "Learn about natural history at your own pace", "estimated_duration_hours": 1.5, "travel_time_to_next_minutes": 20},
+        {"start_time": "12:30", "activity_name": "Lunch Break", "description": "Meal time", "estimated_duration_hours": 1.0, "travel_time_to_next_minutes": 10},
+        {"start_time": "13:40", "activity_name": "Sri Chamarajendra Zoological Gardens (Mysuru Zoo)", "description": "Visit the zoo and see the animals at your own pace", "estimated_duration_hours": 2.0, "travel_time_to_next_minutes": 20},
+        {"start_time": "15:30", "activity_name": "Ghat Goers Sunset Point", "description": "Watch the sunset again at your own pace", "estimated_duration_hours": 1.5, "travel_time_to_next_minutes": 10},
+        {"start_time": "16:30", "activity_name": "Evening Snack", "description": "Snack time", "estimated_duration_hours": 0.5, "travel_time_to_next_minutes": 15},
+        {"start_time": "17:15", "activity_name": "Dr.puneethrajkumar (Appu) statue", "description": "Visit the statue and take photos at your own pace", "estimated_duration_hours": 1.0, "travel_time_to_next_minutes": 10}
+      ],
+      "Day 3": [
+        {"start_time": "09:00", "activity_name": "Mysuru Palace", "description": "Explore the palace again at your own pace", "estimated_duration_hours": 2.0, "travel_time_to_next_minutes": 15},
+        {"start_time": "11:15", "activity_name": "Cheluvamba Park", "description": "Take a leisurely walk in the park again", "estimated_duration_hours": 1.5, "travel_time_to_next_minutes": 20},
+        {"start_time": "12:30", "activity_name": "Lunch Break", "description": "Meal time", "estimated_duration_hours": 1.0, "travel_time_to_next_minutes": 10},
+        {"start_time": "13:40", "activity_name": "Karanji Lake Nature Park", "description": "Take a boat ride on the lake again", "estimated_duration_hours": 2.0, "travel_time_to_next_minutes": 20},
+        {"start_time": "15:30", "activity_name": "GRS Up Down", "description": "Enjoy the thrill rides at your own pace", "estimated_duration_hours": 1.5, "travel_time_to_next_minutes": 10},
+        {"start_time": "16:30", "activity_name": "Evening Snack", "description": "Snack time", "estimated_duration_hours": 0.5, "travel_time_to_next_minutes": 15},
+        {"start_time": "17:15", "activity_name": "Mysuru Railway Museum", "description": "Learn about the history of railways again at your own pace", "estimated_duration_hours": 1.5, "travel_time_to_next_minutes": 10}
+      ]
+    }
+  },
+  {
+    "type": "Budget",
+    "plan": {
+      "Day 1": [
+        {"start_time": "09:00", "activity_name": "Mysuru Palace", "description": "Explore the palace", "estimated_duration_hours": 2.0, "travel_time_to_next_minutes": 15},
+        {"start_time": "11:15", "activity_name": "Karanji Lake Nature Park", "description": "Take a stroll around the lake", "estimated_duration_hours": 1.5, "travel_time_to_next_minutes": 20},
+        {"start_time": "12:30", "activity_name": "Lunch Break", "description": "Meal time", "estimated_duration_hours": 1.0, "travel_time_to_next_minutes": 10},
+        {"start_time": "13:40", "activity_name": "GRS Fantasy Park", "description": "Enjoy the rides and games", "estimated_duration_hours": 1.5, "travel_time_to_next_minutes": 10},
+        {"start_time": "15:30", "activity_name": "Evening Snack", "description": "Snack time", "estimated_duration_hours": 0.5, "travel_time_to_next_minutes": 15},
+        {"start_time": "16:30", "activity_name": "Mysuru Railway Museum", "description": "Learn about the history of railways", "estimated_duration_hours": 1.5, "travel_time_to_next_minutes": 10}
+      ],
+      "Day 2": [
+        {"start_time": "09:00", "activity_name": "Jaganmohan Palace (Sri Jayachamarajendra Art Gallery) And Auditorium", "description": "Explore the art gallery and auditorium", "estimated_duration_hours": 2.0, "travel_time_to_next_minutes": 15},
+        {"start_time": "11:15", "activity_name": "Regional Museum of Natural History Mysuru", "description": "Learn about natural history", "estimated_duration_hours": 1.5, "travel_time_to_next_minutes": 20},
+        {"start_time": "12:30", "activity_name": "Lunch Break", "description": "Meal time", "estimated_duration_hours": 1.0, "travel_time_to_next_minutes": 10},
+        {"start_time": "13:40", "activity_name": "Sri Chamarajendra Zoological Gardens (Mysuru Zoo)", "description": "Visit the zoo and see the animals", "estimated_duration_hours": 2.0, "travel_time_to_next_minutes": 20},
+        {"start_time": "15:30", "activity_name": "Ghat Goers Sunset Point", "description": "Watch the sunset again", "estimated_duration_hours": 1.5, "travel_time_to_next_minutes": 10},
+        {"start_time": "16:30", "activity_name": "Evening Snack", "description": "Snack time", "estimated_duration_hours": 0.5, "travel_time_to_next_minutes": 15},
+        {"start_time": "17:15", "activity_name": "Dr.puneethrajkumar (Appu) statue", "description": "Visit the statue and take photos", "estimated_duration_hours": 1.0, "travel_time_to_next_minutes": 10}
+      ],
+      "Day 3": [
+        {"start_time": "09:00", "activity_name": "Mysuru Palace", "description": "Explore the palace again", "estimated_duration_hours": 2.0, "travel_time_to_next_minutes": 15},
+        {"start_time": "11:15", "activity_name": "Cheluvamba Park", "description": "Take a stroll in the park again", "estimated_duration_hours": 1.5, "travel_time_to_next_minutes": 20},
+        {"start_time": "12:30", "activity_name": "Lunch Break", "description": "Meal time", "estimated_duration_hours": 1.0, "travel_time_to_next_minutes": 10},
+        {"start_time": "13:40", "activity_name": "Karanji Lake Nature Park", "description": "Take a boat ride on the lake again", "estimated_duration_hours": 2.0, "travel_time_to_next_minutes": 20},
+        {"start_time": "15:30", "activity_name": "GRS Up Down", "description": "Enjoy the thrill rides again", "estimated_duration_hours": 1.5, "travel_time_to_next_minutes": 10},
+        {"start_time": "16:30", "activity_name": "Evening Snack", "description": "Snack time", "estimated_duration_hours": 0.5, "travel_time_to_next_minutes": 15},
+        {"start_time": "17:15", "activity_name": "Mysuru Railway Museum", "description": "Learn about the history of railways again", "estimated_duration_hours": 1.5, "travel_time_to_next_minutes": 10}
+      ]
+    }
+  },
+  {
+    "type": "Adventure",
+    "plan": {
+      "Day 1": [
+        {"start_time": "09:00", "activity_name": "Mysuru Palace", "description": "Explore the palace", "estimated_duration_hours": 2.0, "travel_time_to_next_minutes": 15},
+        {"start_time": "11:15", "activity_name": "Karanji Lake Nature Park", "description": "Take a boat ride on the lake", "estimated_duration_hours": 2.0, "travel_time_to_next_minutes": 20},
+        {"start_time": "12:30", "activity_name": "Lunch Break", "description": "Meal time", "estimated_duration_hours": 1.0, "travel_time_to_next_minutes": 10},
+        {"start_time": "13:40", "activity_name": "GRS Fantasy Park", "description": "Enjoy the thrill rides", "estimated_duration_hours": 1.5, "travel_time_to_next_minutes": 10},
+        {"start_time": "15:30", "activity_name": "Evening Snack", "description": "Snack time", "estimated_duration_hours": 0.5, "travel_time_to_next_minutes": 15},
+        {"start_time": "16:30", "activity_name": "Mysuru Railway Museum", "description": "Learn about the history of railways", "estimated_duration_hours": 1.5, "travel_time_to_next_minutes": 10}
+      ],
+      "Day 2": [
+        {"start_time": "09:00", "activity_name": "Jaganmohan Palace (Sri Jayachamarajendra Art Gallery) And Auditorium", "description": "Explore the art gallery and auditorium", "estimated_duration_hours": 2.0, "travel_time_to_next_minutes": 15},
+        {"start_time": "11:15", "activity_name": "Regional Museum of Natural History Mysuru", "description": "Learn about natural history", "estimated_duration_hours": 1.5, "travel_time_to_next_minutes": 20},
+        {"start_time": "12:30", "activity_name": "Lunch Break", "description": "Meal time", "estimated_duration_hours": 1.0, "travel_time_to_next_minutes": 10},
+        {"start_time": "13:40", "activity_name": "Sri Chamarajendra Zoological Gardens (Mysuru Zoo)", "description": "Visit the zoo and see the animals", "estimated_duration_hours": 2.0, "travel_time_to_next_minutes": 20},
+        {"start_time": "15:30", "activity_name": "Ghat Goers Sunset Point", "description": "Watch the sunset again", "estimated_duration_hours": 1.5, "travel_time_to_next_minutes": 10},
+        {"start_time": "16:30", "activity_name": "Evening Snack", "description": "Snack time", "estimated_duration_hours": 0.5, "travel_time_to_next_minutes": 15},
+        {"start_time": "17:15", "activity_name": "Dr.puneethrajkumar (Appu) statue", "description": "Visit the statue and take photos", "estimated_duration_hours": 1.0, "travel_time_to_next_minutes": 10}
+      ],
+      "Day 3": [
+        {"start_time": "09:00", "activity_name": "Mysuru Palace", "description": "Explore the palace again", "estimated_duration_hours": 2.0, "travel_time_to_next_minutes": 15},
+        {"start_time": "11:15", "activity_name": "Cheluvamba Park", "description": "Take a stroll in the park again", "estimated_duration_hours": 1.5, "travel_time_to_next_minutes": 20},
+        {"start_time": "12:30", "activity_name": "Lunch Break", "description": "Meal time", "estimated_duration_hours": 1.0, "travel_time_to_next_minutes": 10},
+        {"start_time": "13:40", "activity_name": "Karanji Lake Nature Park", "description": "Take a boat ride on the lake again", "estimated_duration_hours": 2.0, "travel_time_to_next_minutes": 20},
+        {"start_time": "15:30", "activity_name": "GRS Up Down", "description": "Enjoy the thrill rides again", "estimated_duration_hours": 1.5, "travel_time_to_next_minutes": 10},
+        {"start_time": "16:30", "activity_name": "Evening Snack", "description": "Snack time", "estimated_duration_hours": 0.5, "travel_time_to_next_minutes": 15},
+        {"start_time": "17:15", "activity_name": "Mysuru Railway Museum", "description": "Learn about the history of railways again", "estimated_duration_hours": 1.5, "travel_time_to_next_minutes": 10}
+      ]
+    }
+  }
+]
+
+**TRIP DETAILS**
+
+* **Destination:** Mysore
+* **Duration:** 3 days
+* **Activities:**
+	+ Explore Mysuru Palace (2 hours)
+	+ Take a boat ride on Karanji Lake Nature Park (2 hours)
+	+ Enjoy thrill rides at GRS Fantasy Park (1.5 hours)
+	+ Visit the zoo and see animals at Sri Chamarajendra Zoological Gardens (Mysuru Zoo) (2 hours)
+	+ Watch sunset at Ghat Goers Sunset Point (1.5 hours)
+	+ Take a stroll in Cheluvamba Park (1.5 hours)
+	+ Learn about natural history at Regional Museum of Natural History Mysuru (1.5 hours)
+	+ Visit the statue and take photos at Dr.puneethrajkumar (Appu) statue (1 hour)
+* **Meals:**
+	+ Breakfast
+	+ Lunch
+	+ Dinner
+* **Transportation:** Not included in the itinerary
+
+**BUDGET BREAKDOWN**
+
+* **Accommodation:** ₹5,000 per night (total: ₹15,000)
+* **Food:** ₹500 per meal (total: ₹3,000)
+* **Activities:** ₹1,000 per activity (total: ₹6,000)
+* **Transportation:** Not included in the itinerary
+* **Total:** ₹24,000
+
+**RECOMMENDATIONS**
+
+* Book your accommodation and food in advance to avoid last-minute rush.
+* Plan your activities according to your interests and preferences.
+* Don't forget to carry sunscreen, sunglasses, and a hat for outdoor activities.
+* Be prepared for unexpected changes in the itinerary due to weather or other unforeseen circumstances.
+
+**CONTACT INFORMATION**
+
+* Phone: +91 98450 12345
+* Email: [mysuretravel@gmail.com](mailto:mysuretravel@gmail.com)
+* Address: Mysore, Karnataka, India
